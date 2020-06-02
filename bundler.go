@@ -432,7 +432,7 @@ func (b *Bundler) bundle(e ConfigurationEnvironment) (err error) {
 	}
 
 	var binaryPath = filepath.Join(environmentPath, "binary")
-	args = append(args, "-o", binaryPath, b.pathBuild)
+	args = append(args, "-o", binaryPath)
 
 	// Build cmd
 	b.l.Debugf("Building for os %s and arch %s astilectron: %s electron: %s", e.OS, e.Arch, b.versionAstilectron, b.versionElectron)
